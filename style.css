@@ -1,0 +1,27 @@
+
+  body {
+     margin-right: 20%;
+     margin-left: 15%;
+     font-family: sans;
+  }
+  table {
+     font-size: small;
+  }
+  li {
+     margin-top: 10px;
+  }
+  h1, h2{
+     background-color: #007d7d;
+     padding: 0.2em;
+     margin-top: 1.5em;
+     color: white;
+  }
+
+#roadmap {
+  margin-right: 30%;
+}
+
+  div.navtable {
+      display: inline;
+ } 
+

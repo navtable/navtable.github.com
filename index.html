@@ -1,0 +1,298 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><title>NavTable: gvSIG's extension </title>
+<meta name="description" content="NavTable - gvSIG's extension to view and edit records of vectorial geographical information layers.">
+<meta name="keywords" content="NavTable, GIS, gvSIG, gvSIG extension, Geographical Information, Tables">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link REL="SHORTCUT ICON" HREF="table_refresh.png">
+</head>
+
+<div class="contents">
+<h1>NavTable - gvSIG extension </h1>
+<!-- <hr /> -->
+<div style=" float: right; margin-left: 15px;" > <a href="NavTableScreenshot.jpg"> <img src="NavTableScreenshot.jpg" width="220" /> </a> </div>
+<p><center><b>Select language</b>: [English] <a href="index.html">[Español]</a> </center><p>
+
+<p>
+
+<div class="NavTable"><b>NavTable </b> </div> is a <a href="http://www.gvsig.org"> gvSIG's extension</a> to view in a agile way the records of vectorial geographical information layers. Its main characteristic is that allows to see the element's attributes one by one and in vertical direction. Some of its features are: edit alphanumeric values and navigate among the elements of an information layer.
+</p>
+
+<p>
+<b>NavTable</b> is a simple tool that was thought to get a more confortable user experience in GIS. In spite of beeing a very recent development it is very useful in order to work with data everyday.  
+</p>
+<p>
+The extension <b>NavTable</b> has been developed by the Cartography Engineering Laboratory of University of A Coruña, <a href="http://www.cartolab.es"> CartoLab </a> and it has been released under the terms of the version 3 of the GNU General Public License. We encourage to any user to let us know any suggest, comment, bug reports, etc...
+</p>
+
+<!--<hr/>-->
+<h2 id="roadmap"> Roadmap</h2>
+<p> <b>Roadmap</b> of <a href="http://navtable.forge.osor.eu/roadmap_en.html">future NavTable releases</a>.</p>
+
+
+<br>
+<!-- <hr /> -->
+
+<h2>Downloads</h2>
+
+<!--<p style="background-color: #ccffdd">
+<br/> 
+A new <b>NavTable BETA version 0.4.1</b> compatible with <b>gvSIG 1.9</b> is available (3 December, 2009).
+<table border="0" cellspacing="15" >
+<tr>
+  <td> <b> Binaries: </b> </td> 
+  <td> <a href="http://forge.osor.eu/frs/download.php/791/gvSIG1.9_navTable-0.4.1_beta-bin.zip"> Manual installation (BIN)</a> </td> 
+</tr>
+<tr>
+  <td> <b> Source code: </b> </td> 
+  <td> <a href="http://forge.osor.eu/frs/download.php/792/gvSIG1.9_navTable-0.4.1_beta-src.zip">  Source Code (ZIP)</a> </td> 
+</tr>
+
+</table>
+</p> -->
+
+<p>
+Current version of NavTable is <b>0.6.2</b> (August 18, 2010). It works with gvSIG <b>1.9 and 1.10 versions only</b>.
+<table border="0" cellspacing="15" >
+<tr>
+  <td> <b> Linux installer: </b> </td> 
+  <td> <a href="http://forge.osor.eu/frs/download.php/1226/NavTable-0.6.2_gvSIG-1.10-linux-i586.bin"> Linux installer (BIN)</a> </td> 
+</tr>
+<tr>
+  <td> <b> Windows installer: </b> </td> 
+  <td> <a href="http://forge.osor.eu/frs/download.php/1227/NavTable-0.6.2_gvSIG-1.10-windows-i586.exe"> Windows installer (EXE)</a> </td> 
+</tr>
+<tr>
+  <td> <b> User manual: </b> </td> 
+  <td> <a href="http://forge.osor.eu/frs/download.php/1091/Manual_basico_de_NavTable_0_6.pdf"> Manual NavTable (PDF in Spanish)</a>  <a href="http://forge.osor.eu/frs/download.php/916/NavTable_0.4_Manuale_Italian.pdf">(Italian version 0.4)</a> </td> 
+</tr>
+<tr>
+  <td> <b> Binaries: </b> </td> 
+  <td> <a href="http://forge.osor.eu/frs/download.php/1201/NavTable-0.6.2_gvSIG-1.10-bin.zip"> Manual installation </a> </td> 
+</tr>
+<tr>
+  <td> <b> Source code: </b> </td> 
+  <td> <a href="http://forge.osor.eu/frs/download.php/1202/NavTable-0.6.2_gvSIG-1.10-src.zip"> Source Code (ZIP)</a></td> 
+</tr>
+
+</table>
+
+<p style="background-color: #ccffdd">
+<br/>
+ &nbsp; &nbsp; &nbsp;Old released available <a href="http://forge.osor.eu/frs/?group_id=122&release_id=508">  <b> here</b> </a> <br/> &nbsp;
+</p>
+
+</p>
+
+<!-- <hr /> -->
+
+<p>Release changes: <a href="http://forge.osor.eu/plugins/scmsvn/viewcvs.php/*checkout*/branches/extNavTable_1_9/NEWS?root=navtable&rev=177">NEWS</a> </p>
+
+<h2> Features </h2>
+
+<ul>
+<li>Visualization of vectorial layers data in records one by one and in vertical direction</li>
+<li><b>Edition</b> of alphanumeric values (tested with ESRI Shapefile and PostGIS). It also supports non-geographical tables.</li>
+<li>Direct access to contiguous records, first, last or even to a specifc one; cursor keys supported</li>
+<li><b>Navigation</b> using selection filters</li>
+<li><b>Zoom</b> automatic and manual to the elements</li>
+<li>Zoom to the elements with fixed scale</li>
+<li>Allow to <b>select</b> and unselect elements</li>
+<li>Direct copy of attributes of a selected record</li>
+<li>Calculation area and length of the geometry</li>
+<li>Available in English, Galician, Portuguese, French and Spanish</li>
+</ul>
+
+<br>
+
+<!-- <hr /> -->
+
+<h2><a class="anchor" name="requisitos">
+Requirements</a></h2>
+<div style=" float: left; margin-right: 10px;" > <img src="gvSIG_icon.png" /> </div>
+<p>NavTable is a gvSIG extension, so it is necessary to have previously a gvSIG installation. It is compatible with versions 1.9 of gvSIG that can be obtained from <a href="http://www.gvsig.org"> http://www.gvsig.org </a> </p>
+
+<p> NavTable and gvSIG are cross-plaftform so can be installed in GNU/Linux, Windows and MacOS enviroments.</p>
+
+
+<p  style="margin-left: 3em;">
+<b>More informaticon about gvSIG requirements:</b> <br>
+</p>
+<p  style="margin-left: 8em;">
+<b>Minimum:</b> Pentium III (or equivalent) / 256 MB RAM  <br>
+<b>Recommended:</b> Pentium IV (or equivalent) / 512 MB RAM  <br>
+</p>
+
+<br>
+<!-- <hr /> -->
+
+<h2><a class="anchor" name="instalacion">
+Installation</a></h2>
+
+<p>Once gvSIG version 1.9 is installed in the system, NavTable can be installed by means of the next ways:
+</p>
+
+<p><b>Automatic installation by means the assistant: </b> <br>
+
+Download the correspondent <a> installer </a>, execute it and follow the instructions.
+</p>
+
+<p> <b>Manual installation: </b><br>
+
+If you want to install NavTable manually you can download the binary files <a href="http://forge.osor.eu/frs/download.php/1092/NavTable-0.6_gvSIG-1.9-bin.zip">navTable_0.6.zip</a> and unzip the folder <b>'es.udc.cartolab.gvsig.navtable'</b> into: <i>[gvSIG_installation_path]/bin/gvSIG/extensiones/</i> <br>
+
+</p>
+<p style="margin-left: 3em;">
+Linux example: <br> 
+<i>/home/user/gvSIG_1.9/bin/gvSIG/extensiones/es.udc.cartolab.gvsig.navtable</i> 
+<br><br>
+Mac example: <br>
+<i>/Applications/gvSIG/sextante/gvSIG1.9build1045sex20090521.app/Contents/Resources/gvSIG/gvSIG\ 1.9\ build\ 1045.app/Contents/Resources/Java/gvSIG/extensiones/es.udc.cartolab.gvsig.navtable</i>
+<br><br>
+Windows example: <br> 
+<i>C:\Program Files\gvSIG_1_9\bin\gvSIG\extensiones\es.udc.cartolab.gvsig.navtable</i>
+
+</p>
+
+<br>
+<!-- <hr /> -->
+
+<h2><a class="anchor" name="uso">
+How to use</a></h2>
+
+<p>
+In order to use NavTable, first we must select a layer into the gvSIG's TOC and press the button <img src="navtable_button.png" height="20">. This will open the NavTable window and from now on it will be possible to deal with using its buttons and checkboxes.
+</p>
+
+<p>
+There is more information available in the <a href="http://forge.osor.eu/frs/download.php/1091/Manual_basico_de_NavTable_0_6.pdf"> user manual</a> (in Spanish and also in <a href="http://forge.osor.eu/frs/download.php/916/NavTable_0.4_Manuale_Italian.pdf">Italian</a>). You can watch a screencast showing how to use the NavTable features:
+</p>
+
+<p>
+<object width="560" height="340"><param name="movie" value="http://www.youtube.com/v/ykWyD3FQSX4&hl=en&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/ykWyD3FQSX4&hl=en&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object>
+</p>
+
+
+<br>
+<!-- <hr /> -->
+
+
+<h2><a class="anchor" name="enlaces">
+Links</a></h2>
+<p>NavTable is hosted into the <a href="http://forge.osor.eu/projects/navtable/"> OSOR </a> forge. In this link you can find useful information about the proyect such as documentation, mailing lists, bug tracker system, etc...
+</p>
+
+<p><b>SVN repository</b> of the source code are available in this <a href="http://forge.osor.eu/scm/?group_id=122"> link</a>.</p>
+
+<p>
+You can also visit the <a href="http://www.cartolab.es"> CartoLab's web </a> where you can know more proyects and activities.
+</p>
+
+<br>
+<!-- <hr /> -->
+
+<h2><a class="anchor" name="participar">
+How to participate</a></h2>
+
+<p>
+NavTable is under continuos development, incorporating new features, fixing bugs, etc. That's why all the suggestions, ideas, comments, bug reports will be welcome. 
+</p>
+
+<ul>
+<li><b>CartoLab mail:</b>  cartolab (at) udc (dot) es </li>
+<li><b>Mailing List: </b> 
+<br>
+gvSIG's mailing lists (<a href="http://www.gvsig.org/web/community/mailing-lists/directory-en/view?set_language=en">gvSIG distribution lists</a>)
+<br>
+NavTable developers (<a href="http://lists.forge.osor.eu/mailman/listinfo/navtable-devel">NavTable-devel list</a>)
+</li>
+<li><b>Bug reports: </b> <a href="http://forge.osor.eu/tracker/?atid=462&group_id=122&func=browse"> bug tracker system </a></li> 
+<li><b>Translations: </b> user manual is only available in Spanish and Italian. Some volunteer? </li>
+</ul>
+
+<p> Help us to make NavTable better!</p> 
+
+<!--
+<h2><a class="anchor" name="futuro">
+Trabajos futuros</a></h2>
+En la sección de "Trabajos futuros" en página web del proyecto [2] encontrarás algunas de las cosas que queremos incorporar proximamente en NavTable.
+-->
+
+<br>
+<!-- <hr /> -->
+
+<h2><a class="anchor" name="créditos">
+Credits</a></h2>
+
+Copyright (c) <b> CartoLab </b> - Universidade da Coruña, 2010.
+<a href="http://www.cartolab.es/"> http://www.cartolab.es/ </a>
+
+<p> License GNU GPL v3. You can find the terms of this license in <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a> </p>
+
+<p>
+<b>CartoLab is managed by:</b> Fco. Alberto Varela García.
+</p>
+
+<h4> Development team: </h4>
+<ul>
+<li>Juan Ignacio Varela García</li>
+<li>Pablo Sanxiao Roca </li>
+<li>Javier Estévez Valiñas </li>
+<li> Francisco Puga Alonso </li>
+<li>Andrés Maneiro Boga</li>
+</ul>
+
+
+<p><b>Contributors:</b>
+<ul>
+<li>Francisco Alberto Varela García </li>
+<li>Daniel Díaz Grandío  </li>
+<li>Gonzalo Martinez Crespo  </li> 
+<li>Adrián Eiris Torres  </li>
+<li>Jorge Ocampo  </li>
+<li>Carmen Molejón  </li>
+<li>Agustín Diez Castillo (Valencia)</li>
+<li>Benjamin Ducke (Oxford Archaeology) </li>
+<li>Silvio Grosso</li>
+<li>Antonio Falciano </li>
+</ul>
+</p>
+
+<p><b>Special thanks to:</b>
+<ul>
+<li>Francisco José Peñarrubia (Valencia) </li>
+<li>Jordi Torres Fabra (Valencia) </li>
+</ul>
+
+
+<p><b>Translations:</b>
+</p><ul>
+<li>Spanish, Galician, English: CartoLab </li>
+<li>French: Gonzalo Martinez Crespo </li>
+<li>Portuguese:  Joaquim Rocha </li>
+<li>German: Artur Juen </li>
+<li>Italian: Silvio Grosso and Antonio Falciano </li>
+</ul>
+
+
+<p>All development and related works with NavTable have been made using exclusively <b> FLOSS</b> (Free Libre Open Source Software).</p>
+
+
+ <hr /> 
+<a href="http://www.cartolab.es"><img src="cartolab.png" alt="CartoLab" width="110" align="middle" border="0"></a> Last Review: Mayo  2010.
+
+
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3876422-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body></html>
