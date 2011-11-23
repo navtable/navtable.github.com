@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="NavTable extensión de gvSIG para visualizar, navegar y editar datos de capas vectoriales y tablas.">
+<meta name="keywords" content="NavTable, SIG, GIS, gvSIG, gvSIG extension, Bases de datos, Tablas">
+
+<title>NavTable: extensión para gvSIG </title>
+
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<link REL="SHORTCUT ICON" HREF="table_refresh.png">
+
+</head>
+
+<body>
+<div class="contents">
+<h1>NavTable - extensión de gvSIG</h1>
+<!-- <hr /> -->
+</p><div style="float: right; margin-left: 15px;"> <a href="http://navtable.forge.osor.eu/NavTableScreenshot.jpg"> <img src="NavTableScreenshot.jpg" width="220"> </a> </div>
+<p><center><b>Selección Idioma</b>: [Español] <a href="index_en.html">[English]</a> </center><p>
+
+<p>
+<div class="NavTable"><b>NavTable </b> </div> es una extensión de <a href="http://www.gvsig.org"> gvSIG</a>
+para visualizar de forma ágil registros de las capas vectoriales de
+información geográfica. Su principal característica es que permite ver
+los atributos de un elemento de manera individualizada y en sentido
+vertical. Entre sus funcionalidades cuenta con la posibilidad de editar
+los valores alfanuméricos, así como navegar entre los elementos de la
+capa de información.
+<p></p>
+
+<p>
+<b>NavTable</b> es una herramienta simple que busca conseguir una
+experiencia de uso más cómodo  para los usuarios de SIG y resulta  muy útil en el trabajo diario con datos geoespaciales.
+</p>
+<p>
+La extensión <b>NavTable</b> ha sido creada por el laboratorio <a href="http://www.cartolab.es/"> CartoLab </a>
+de la "Universidade da Coruña" y se libera bajo una licencia GPL v3.
+Animamos a cualquier persona que nos haga llegar sugerencias,
+comentarios, informes de error, etc.
+</p>
+
+<!-- <hr /> -->
+<h2 id="roadmap">Roadmap</h2>
+<p> <b>Roadmap</b> de las <a href="http://navtable.forge.osor.eu/roadmap.html">siguientes versiones</a> de NavTable.</p>
+
+<br>
+<!-- <hr /> -->
+
+<h2> Descargas</h2>
+
+<p>
+La versión actual de NavTable es <b>0.6.2</b> (18 de agosto de  2010). <b>Compatible</b> con las versiones 1.9 y 1.10 de gvSIG.
+<table border="0" cellspacing="15">
+<tbody><tr>
+  <td> <b> Instalador para Linux: </b> </td> 
+  <td> <a href="http://forge.osor.eu/frs/download.php/1226/NavTable-0.6.2_gvSIG-1.10-linux-i586.bin"> Linux installer (BIN)</a> </td> 
+</tr>
+<tr>
+  <td> <b> Instalador para Windows: </b> </td>
+ 
+  <td> <a href="http://forge.osor.eu/frs/download.php/1227/NavTable-0.6.2_gvSIG-1.10-windows-i586.exe"> Windows installer (EXE)</a> </td> 
+</tr>
+<tr>
+  <td> <b> Manual de usuario: </b> </td> 
+  <td> <a href="http://forge.osor.eu/frs/download.php/1091/Manual_basico_de_NavTable_0_6.pdf"> Manual NavTable (PDF) </a> </td> 
+</tr>
+<tr>
+  <td> <b> Binarios: </b> </td> 
+  <td> <a href="http://forge.osor.eu/frs/download.php/1201/NavTable-0.6.2_gvSIG-1.10-bin.zip"> Instalación Manual (ZIP) </a> </td> 
+</tr>
+<tr>
+  <td> <b> Código fuente: </b> </td> 
+  <td> <a href="http://forge.osor.eu/frs/download.php/1202/NavTable-0.6.2_gvSIG-1.10-src.zip"> Source Code (ZIP)</a></td> 
+</tr>
+
+</tbody></table>
+
+</p>
+
+<p style="background-color: #ccffdd">
+<br/>
+ &nbsp; &nbsp; &nbsp; Versiones anteriores pueden ser descargadas <a href="http://forge.osor.eu/frs/?group_id=122&release_id=508">  <b> aquí</b> </a> <br/> &nbsp;
+</p>
+
+<p>Ver cambios de cada release: <a href="http://forge.osor.eu/plugins/scmsvn/viewcvs.php/*checkout*/branches/extNavTable_1_9/NEWS?root=navtable&rev=177">NEWS</a> </p>
+
+<!-- <p style="background-color: #ccffdd">
+<br/>
+Existe una <b>NavTable BETA version 0.4.1</b> (3 de Diciembre 2009) compatible con <b>gvSIG 1.9</b>
+<table border="0" cellspacing="15" >
+<tr>
+  <td> <b> Binarios: </b> </td> 
+  <td> <a href="http://forge.osor.eu/frs/download.php/1092/NavTable-0.6_gvSIG-1.9-bin.zip"> Instalación manual(BIN)</a> </td> 
+</tr>
+<tr>
+  <td> <b> Fuentes: </b> </td> 
+  <td> <a href="http://forge.osor.eu/frs/download.php/792/gvSIG1.9_navTable-0.4.1_beta-src.zip"> Código fuente (ZIP)</a> </td> 
+</tr>
+
+</table>
+</p> -->
+
+
+<!-- <hr /> -->
+
+<h2> Características principales</h2>
+
+<ul>
+<li>Visualización de datos de capas vectoriales en registros individualizados y en sentido vertical</li>
+<li><b>Edición</b> de los valores alfanuméricos (testeado con ESRI Shapefile y PostGIS). Ahora también tablas sin geometrías. </li>
+<li>Acceso a registros contiguos, primero, último o de forma aleatoria. Control con cursor.</li>
+<li><b>Navegación</b> usando filtros de selección </li>
+<li><b>Zoom</b> manual y automático a los elementos&nbsp; </li>
+<li>Zoom a los elementos con escala fija </li>
+<li>Permite <b>selección</b> y deselección de elementos </li>
+<li>Copiado de los atributos de un registro seleccionado</li>
+<li>Cálculo automático de longitud y área de la geometría</li>
+<li>Disponible en castellano, gallego, portugués, inglés y francés</li>
+</ul>
+
+<br>
+
+<!-- <hr /> -->
+
+<h2><a class="anchor" name="requisitos">
+Requisitos</a></h2>
+<div style="float: left; margin-right: 10px;"> <img src="gvSIG_icon.png"> </div>
+<p>NavTable es una extensión de gvSIG, por lo que es necesario tener
+previamente una instalación de gvSIG. Es compatible con la versión
+1.9 que se puede descargar en <a href="http://www.gvsig.org"> http://www.gvsig.org </a> </p>
+
+<p> NavTable y gvSIG son multiplataforma por lo que puede ser instalada en entornos Windows, GNU/Linux y MacOS. </p>
+
+
+<p style="margin-left: 3em;">
+<b>Más información sobre requisitos de gvSIG: </b> <br>
+</p>
+<p style="margin-left: 8em;">
+<b>Mínimos:</b> Pentium III (o equivalente) / 256 MB RAM  <br>
+<b>Recomendados:</b> Pentium IV (o equivalente) / 512 MB RAM  <br>
+</p>
+
+<br>
+<!-- <hr /> -->
+
+<h2><a class="anchor" name="instalacion">
+Instalación</a></h2>
+
+<p>Una vez instalado gvSIG versión 1.9 en el sistema, se puede instalar la extensión NavTable de las siguientes formas:
+</p>
+
+<p><b>Instalación automatizada mediante asistente: </b> <br>
+
+Descargar el <a> instalador </a> correspondiente a su sistema operativo y ejecutarlo. Seguir las instrucciones.</p>
+
+<p> <b>Instalación manual: </b><br>
+
+Si quiere instalar NavTable manualmente puede descargar el fichero de binarios <a href="http://forge.osor.eu/frs/download.php/1092/NavTable-0.6_gvSIG-1.9-bin.zip" > navTable_0.6.zip</a> y descomprimir la carpeta <b>'es.udc.cartolab.gvsig.navtable'</b> en la carpeta: <i>[ruta_instalación_gvSIG]/bin/gvSIG/extensiones/</i> <br>
+</p>
+<p style="margin-left: 3em;">
+Ejemplo Linux: <br> 
+<i>/home/usuario/gvSIG_1.9/bin/gvSIG/extensiones/es.udc.cartolab.gvsig.navtable</i> <br><br>
+Ejemplo Mac: <br>
+<i>/Applications/gvSIG/sextante/gvSIG1.9build1045sex20090521.app/Contents/Resources/gvSIG/gvSIG\ 1.9\ build\ 1045.app/Contents/Resources/Java/gvSIG/extensiones/es.udc.cartolab.gvsig.navtable</i>
+<br><br>
+Ejemplo Windows: <br> 
+<i>C:\Program Files\gvSIG_1_9\bin\gvSIG\extensiones\es.udc.cartolab.gvsig.navtable</i>
+
+</p>
+
+<br>
+<!-- <hr /> -->
+
+<h2><a class="anchor" name="uso">
+Instrucciones de uso</a></h2>
+
+<p>Para utilizar NavTable se debe seleccionar una capa en el ToC (Leyenda) de gvSIG y pulsar el botón <img src="navtable_button.png" height="20">. Esto abrirá la ventana de NavTable y ya se podrá interactuar usando sus botones y checkboxes.</p>
+
+<p> Para más información consultar el <a href="http://forge.osor.eu/frs/download.php/1091/Manual_basico_de_NavTable_0_6.pdf"> manual de usuario </a>. Existe una demo en la que se muestra el uso básico de NavTable disponible en video</a>:
+</p>
+
+<p>
+<object width="560" height="340"><param name="movie" value="http://www.youtube.com/v/ykWyD3FQSX4&hl=en&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/ykWyD3FQSX4&hl=en&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object>
+
+ </p>
+
+<br>
+<!-- <hr /> -->
+
+
+<h2><a class="anchor" name="enlaces">
+Enlaces</a></h2>
+<p>NavTable está alojado en la forja de <a href="http://forge.osor.eu/projects/navtable/"> OSOR </a>.
+En ese enlace puedes encontrar información útil del proyecto como
+documentos, listas de correo, sistema para informar de errores, etc.
+</p>
+
+<p>El repositorio de código fuente <b>SVN</b> donde se desarrolla NavTable está disponible en este <a href="http://forge.osor.eu/scm/?group_id=122"> link</a>. </p>
+
+<p>
+También puedes visitar la página web del laboratorio <a href="http://www.cartolab.es/"> CartoLab </a> de la "Universidade da Coruña" donde puedes conocer más proyectos y actividades.
+</p>
+
+
+<br>
+ <!-- <hr /> --> 
+
+<h2><a class="anchor" name="participar">
+Cómo participar</a></h2>
+
+<p> NavTable se encuentra en proceso de desarrollo continuo,
+incorporando mejoras, corrigiendo fallos, etc. Por ello, todas las
+sugerencias, ideas, comentarios, críticas, notificación de errores
+serán bien recibidas. </p>
+
+<ul>
+<li><b>Correo electrónico:</b>  cartolab (at) udc (punto) es </li>
+<li><b>Lista de correo: </b> 
+<br>
+NavTable para usuarios: <a href="http://www.gvsig.org/web/community/mailing-lists/directory-en/view?set_language=en">Listas distribución de gvSIG</a>
+<br>
+NavTable para desarrolladores: <a href="http://lists.forge.osor.eu/mailman/listinfo/navtable-devel">NavTable-devel list </a>(en inglés preferentemente)
+</li>
+<li><b>Reporte de errores: </b> mediante el <a href="http://forge.osor.eu/tracker/?atid=462&amp;group_id=122&amp;func=browse"> bug tracker </a></li> 
+<li><b>Traducciones: </b> manual de usuario, página web e intefaz de NavTable pueden ser traducidas a otros idiomas. ¿Alguien se anima a participar? 
+</ul>
+
+<p> ¡Ayúdanos a construir una herramienta más útil! </p> 
+
+<!--
+<h2><a class="anchor" name="futuro">
+Trabajos futuros</a></h2>
+En la sección de "Trabajos futuros" en página web del proyecto [2] encontrarás algunas de las cosas que queremos incorporar proximamente en NavTable.
+-->
+
+<br>
+<!-- <hr /> -->
+
+<h2><a class="anchor" name="créditos">
+Créditos</a></h2>
+
+Copyright (c) <b> CartoLab </b> - Universidade da Coruña, 2010.
+<a href="http://www.cartolab.es/"> http://www.cartolab.es/ </a>
+
+<p> Licencia GNU GPL v3. Puede encontrar los términos de esta licencia en <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a> </p>
+
+<p>
+<b>Director del CartoLab:</b> Fco. Alberto Varela García.
+</p>
+
+<h4> Equipo de desarrollo: </h4>
+<ul>
+<li>Juan Ignacio Varela García</li>
+<li>Pablo Sanxiao Roca </li>
+<li>Javier Estévez Valiñas </li>
+<li>Francisco Puga Alonso </li>
+<li>Andrés Maneiro Boga</li>
+</ul>
+
+
+<p><b>Han aportado ideas, comentarios, sugerencias y/o informado de errores:
+</b></p><ul>
+<li>Francisco Alberto Varela García </li>
+<li>Daniel Díaz Grandío  </li>
+<li>Gonzalo Martinez Crespo  </li> 
+<li>Adrián Eiris Torres  </li>
+<li>Jorge Ocampo  </li>
+<li>Carmen Molejón  </li>
+<li>Agustín Diez Castillo (Valencia)</li>
+<li>Benjamin Ducke (Oxford) </li>
+<li>Silvio Grosso</li>
+<li> Antonio Falciano </li>
+</ul>
+<p></p>
+
+<p><b>Especial agradecimiento a:</b>
+</p><ul>
+<li>Francisco José Peñarrubia (Valencia) </li>
+<li>Jordi Torres Fabra (Valencia) </li>
+</ul>
+
+<p><b>Traducciones:</b>
+</p><ul>
+<li>Castellano, Galego, English: CartoLab </li>
+<li>Francés: Gonzalo Martinez Crespo </li>
+<li>Portugués:  Joaquim Rocha </li>
+<li>Alemán: Artur Juen </li>
+<li>Italiano:  Silvio Grosso y Antonio Falciano </li>
+</ul>
+
+
+<p>Todo el desarrollo y trabajos relacionados con NavTable se han realizado usando <b> Software Libre</b>. </p>
+
+
+ <hr />
+<a href="http://www.cartolab.es/"><img src="cartolab.png" alt="CartoLab" align="middle" border="0" width="110"></a> Última revisión: Mayo 2010.
+
+
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3876422-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body></html>
