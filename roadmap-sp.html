@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="NavTable extensión de gvSIG para visualizar, navegar y editar datos de capas vectoriales y tablas.">
+<meta name="keywords" content="NavTable, SIG, GIS, gvSIG, gvSIG extension, Bases de datos, Tablas">
+
+<title>NavTable - RoadMap</title>
+
+<link rel="stylesheet" type="text/css" href="style.css"> 
+
+</head>
+
+<body>
+<div class="contents">
+<h1>RoadMap</h1>
+<hr>
+<p></p><center><b>Selección Idioma</b>: [Español] <a href="./roadmap.html">[English]</a> </center>
+
+<div>Volver a la <a href="./index-sp.html">página principal</a>.</div>
+
+<p><div class="navtable"> <b>NavTable</b> </div> es una herramienta aún en desarrollo, está en constante evolución y existen una serie de mejoras y nuevas funcionalidades que se irán incorporando en sucesivas versiones.  <b>Haznos llegar tus sugerencias</b>, fallos detectados, críticas, ideas, etc. e intentaremos tenerlas en cuenta para futuras versiones. </p>
+
+<hr />
+
+<h2>NavTable 0.2.2</h2>
+<div style="float: right; margin-left: 15px;"> <a href="navtable-0_2_2.png"> <img src="navtable-0_2_2.png" width="250"> </a> </div>
+<p>Para esta revisión se han incorporado algunas de las mejoras y correcciones.</p>
+<ul>
+ <li>Posibilidad de asignar <b>nombres largos</b> a los atributos de la capa. Esto se hace mediante un fichero de texto plano.</li>
+ <li>Mejoras en el <b>sincronismo con las selecciones</b> con la vista en gvSIG </li>
+ <li>Navegación usando <b>atajos de teclado</b> (HOME/END/Derecha/Izquierda) si el foco está en el panel central de NavTable</li>
+ <li><b>Aviso </b>cuando se cambia de registro o se cierra la ventana y hay <b>datos sin guardar</b>.</li>
+ <li><b>Copiar seleccionado: </b>el "botón de copia" se activará cuando haya un único registro seleccionado y copiará los valores de éste en el registro visualizado actualmente.</li>
+ <li><b>Cálculo de longitud/perímetro y área</b> de las geometrías asociadas al registro.</li>
+ <li><b>Refresco de la tabla</b> después del guardado para comprobar que efectivamente se han guardado los datos.</li>
+ <li>Lanzar un mensaje de error en caso de que la capa carezca de registros.</li>
+</ul>
+
+<hr />
+
+<h2>NavTable 1.0</h2>
+<div style="float: right; margin-left: 15px;"> <a href="prefs.png"> <img src="prefs.png" width="250"> </a> </div>
+<p>La principal novedad es la posibilidad de <b>configurar el comportamiento</b> de NavTable a la hora de mostrar los datos. Se podrán editar opciones de qué campos mostrar, ocultar atributos con valores vacíos, etc. </p>
+<p>En lugar de usar un fichero en texto plano, se usará XML para la configuración de nombres largos, además de otras mejoras como <b>definición de tooltips, valores por defecto y checkeos básicos</b></p>
+<p>Se pretende añadir capacidades de <b>edición de geometrías</b>, y hacer que NavTable también funcione con tablas sin componente geográfica.</p>
+<p>A nivel de desarrollo puro, se separará la lógica de acceso a datos de la de la interfaz gráfica. Esto permitirá hacer bindings de NavTable para otras herramientas SIG. </p>
+
+<hr />
+
+
+<h2>NavTable 2.0</h2>
+
+<p>Se podrá <b>modificar la estructura de la tabla</b> desde NavTable:  añadir, eliminar y modificar atributos, ordenarlos, etc.</p>
+<p>Además se añaden otras funcionalidades como la posibilidad de ejecutarse cuando se finaliza la creación de una geometría, ordenar los registros por un campo determinado, o mejoras en la búsqueda de datos a través de búsquedas lexicográficas incrementales.</p>
+<div style="text-align: center; margin-left: 15px;"> <a href="edit_table.png"> <img src="edit_table.png" width="350"> </a> </div>
+<hr />
+
+<a href="http://www.cartolab.es/"><img src="cartolab.png" alt="CartoLab" width="110" align="middle" border="0"></a> Última revisión: Mayo 2009.
+
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3876422-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body></html>
