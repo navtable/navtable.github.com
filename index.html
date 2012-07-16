@@ -26,15 +26,16 @@
 The extension <b>NavTable</b> has been developed by the Cartography Engineering Laboratory of University of A Coruña, <a href="http://www.cartolab.es"> CartoLab </a> and it has been released under the terms of the version 3 of the GNU General Public License. We encourage to any user to let us know any suggest, comment, bug reports, etc...
 </p>
 
-<h2> Features </h2>
+<h2> Main Features </h2>
 
 <ul>
 <li>Visualization of vectorial layers data in records one by one and in vertical direction.</li>
 <li>Direct access to contiguous records, first, last or even to a specifc one. Cursor keys supported</li>
 <li>Allow to select and unselect elements.</li>
-<li>Edition of alphanumeric values. It also supports non-geographical tables.</li>
-<li>Direct copy of attributes of a selected record.</li>
+<li>Edition of alphanumeric values on vectorial and alphanumeric tables.</li>
+<li>Direct copy of attributes from other register (from last or the selected record).</li>
 <li>Zoom: automatic and manual to an element, also supports zoom with fixed scale.</li>
+<li>Navigation by means of selection filters.</li>
 <li>Quick filters through the contextual menu. </li>
 <li>Available in English, Galician, Spanish, Portuguese, French and German.</li>
 </ul>
@@ -45,9 +46,7 @@ The extension <b>NavTable</b> has been developed by the Cartography Engineering 
 In order to use NavTable, first we must select a layer into the gvSIG's TOC and press the button <img src="navtable_button.png" height="20">. This will open the NavTable window and from now on it will be possible to deal with using its buttons and checkboxes.
 </p>
 
-<p>
-There is more information available in the <a href="http://forge.osor.eu/frs/download.php/1091/Manual_basico_de_NavTable_0_6.pdf"> user manual</a> (in Spanish and also in <a href="http://forge.osor.eu/frs/download.php/916/NavTable_0.4_Manuale_Italian.pdf">Italian</a>). You can watch a screencast showing how to use the NavTable features:
-</p>
+<p>Read the user manual <a href="https://github.com/navtable/navtable/raw/master/manual/en/navtable_manual_EN.pdf">[EN]</a> - <a href="https://github.com/navtable/navtable/raw/master/manual/es/navtable_manual_ES.pdf">[ES]</a> - <a href="https://github.com/navtable/navtable/raw/master/manual/it/navtable_manual_IT.pdf">[IT]</a> or watch a screencast to learn how to use the main NavTable features:</p>
 
 <p>
 <object width="560" height="340"><param name="movie" value="http://www.youtube.com/v/ykWyD3FQSX4&hl=en&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/ykWyD3FQSX4&hl=en&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object>
@@ -152,12 +151,13 @@ There is more information available in the <a href="http://forge.osor.eu/frs/dow
 <p> NavTable is under continuos development, incorporating new features, fixing bugs, etc. That's why all the suggestions, ideas, comments, bug reports will be welcome.</p>
 
 <ul>
+<li><b>e-mail</b>: cartolab (at) udc (punto) es</li>
 <li><b>Users mailinglist</b>: we listen at several <a
 href="http://www.gvsig.org/web/community/mailing-lists/directory-en/view?set_language=en">gvSIG
 users mailinglists</a>.</li>
 <li><strong>Developers mailinglist</strong>: <a href="http://joinup.ec.europa.eu/mailman/listinfo/navtable-devel">navtable-devel</a>.</li>
 <li><b>Bug reports: </b> <a href="https://github.com/navtable/navtable/issues"> bug tracker system</a>.</li>
-<li><b>Translations: </b> user manual is only available in Spanish and Italian. Some volunteer?.</li>
+<li><b>Translations: </b> user manual is available in English, Spanish and Italian. Some volunteer?.</li>
 <li><strong>Source code:</strong> <a href="https://github.com/navtable/navtable">available at github</a>.</li>
 </ul>
 
@@ -166,7 +166,7 @@ users mailinglists</a>.</li>
 <h2><a class="anchor" name="créditos">
 Credits</a></h2>
 
-Copyright (c) <b> CartoLab </b> - Universidade da Coruña, 2010.
+Copyright (c) <b> CartoLab </b> - Universidade da Coruña, 2009, 2010, 2011, 2012.
 <a href="http://www.cartolab.es/"> http://www.cartolab.es/ </a>
 
 <p> License GNU GPL v3. You can find the terms of this license in <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a> </p>
@@ -175,13 +175,14 @@ Copyright (c) <b> CartoLab </b> - Universidade da Coruña, 2010.
 <b>CartoLab is managed by:</b> Fco. Alberto Varela García.
 </p>
 
-<h4> Development team: </h4>
+<h4> Development team (in order of appearance): </h4>
 <ul>
 <li>Juan Ignacio Varela García</li>
-<li>Pablo Sanxiao Roca </li>
+<li>Pablo Sanxiao Roca (iCarto)</li>
 <li>Javier Estévez Valiñas </li>
-<li> Francisco Puga Alonso </li>
-<li>Andrés Maneiro</li>
+<li>Francisco Puga Alonso (CartoLab)</li>
+<li>Andrés Maneiro (iCarto)</li>
+<li>Jorge López (CartoLab)</li>
 </ul>
 
 <p><b>Contributors:</b>
@@ -192,17 +193,23 @@ Copyright (c) <b> CartoLab </b> - Universidade da Coruña, 2010.
 <li>Adrián Eiris Torres  </li>
 <li>Jorge Ocampo  </li>
 <li>Carmen Molejón  </li>
-<li>Agustín Diez Castillo (Valencia)</li>
-<li>Benjamin Ducke (Oxford Archaeology) </li>
-<li>Silvio Grosso</li>
-<li>Antonio Falciano </li>
+<li>Vanessa Ros</li>
 </ul>
 </p>
 
 <p><b>Special thanks to:</b>
 <ul>
 <li>Francisco José Peñarrubia (Valencia) </li>
-<li>Jordi Torres Fabra (Valencia) </li>
+<li>Joaquim Rocha</li>
+<li>Artur Juen</li>
+<li>Silvio Grosso</li>
+<li>Antonio Falciano </li>
+<li>Nacho Brodin</li>
+<li>Benjamin Ducke</li>
+<li>Agustín Diez Castillo</li>
+<li>Jordi Torres</li>
+<li>Giuliano Ramat</li>
+<li>José Antonio Canalejo</li>
 </ul>
 
 
@@ -220,7 +227,7 @@ Copyright (c) <b> CartoLab </b> - Universidade da Coruña, 2010.
 
 
  <hr />
-<a href="http://www.cartolab.es"><img src="cartolab.png" alt="CartoLab" width="110" align="middle" border="0"></a> Last Review: December 2011.
+<a href="http://www.cartolab.es"><img src="cartolab.png" alt="CartoLab" width="110" align="middle" border="0"></a> Last Review: July 2012.
 
 </div>
 
