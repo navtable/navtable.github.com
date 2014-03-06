@@ -16,14 +16,14 @@
 
 <p>
 
-<div class="NavTable"><b>NavTable </b> </div> is a <a href="http://www.gvsig.org"> gvSIG's extension</a> to view in a agile way the records of vectorial geographical information layers. Its main characteristic is that allows to see the element's attributes one by one and in vertical direction. Some of its features are: edit alphanumeric values and navigate among the elements of an information layer.
+<div class="NavTable"><b>NavTable</b></div> is a <a href="http://www.gvsig.org"> gvSIG's extension</a> to view in a agile way the records of vectorial geographical information layers. Its main characteristic is that allows to see the element's attributes one by one and in vertical direction. Some of its features are: edit alphanumeric values and navigate among the elements of an information layer.
 </p>
 
 <p>
 <b>NavTable</b> is a simple tool that was thought to get a more comfortable user experience in GIS. In spite of beeing a very recent development it is very useful in order to work with data everyday.
 </p>
 <p>
-The extension <b>NavTable</b> has been developed by the Cartography Engineering Laboratory of University of A Coruña, <a href="http://www.cartolab.es"> CartoLab </a> and it has been released under the terms of the version 3 of the GNU General Public License. We encourage to any user to let us know any suggest, comment, bug reports, etc...
+The extension <b>NavTable</b> has been developed by the Cartography Engineering Laboratory of University of A Coruña, Cartolab and it's currently maintained by <a href="http://cartolab.udc.es/">CartoLab</a> and <a href="http://icarto.es">iCarto</a>. It has been released under the terms of the version 3 of the GNU General Public License. We encourage to any user to let us know any suggest, comment, bug reports, etc...
 </p>
 
 <h2> Main Features </h2>
@@ -46,14 +46,14 @@ The extension <b>NavTable</b> has been developed by the Cartography Engineering 
 In order to use NavTable, first we must select a layer into the gvSIG's TOC and press the button <img src="navtable_button.png" height="20">. This will open the NavTable window and from now on it will be possible to deal with using its buttons and checkboxes.
 </p>
 
-<p>Read the user manual <a href="https://github.com/navtable/navtable/raw/master/manual/en/navtable_manual_EN.pdf">[EN]</a> - <a href="https://github.com/navtable/navtable/raw/master/manual/es/navtable_manual_ES.pdf">[ES]</a> - <a href="https://github.com/navtable/navtable/raw/master/manual/it/navtable_manual_IT.pdf">[IT]</a> or watch a screencast to learn how to use the main NavTable features:</p>
+<p>Read the user manual <a href="https://github.com/navtable/navtable/raw/master/manual/en/navtable_manual_EN.rst">[EN]</a> - <a href="https://github.com/navtable/navtable/raw/master/manual/es/navtable_manual_ES.rst">[ES]</a> - <a href="https://github.com/navtable/navtable/raw/master/manual/it/navtable_manual_IT.rst">[IT]</a> or watch a screencast to learn how to use the main NavTable features:</p>
 
 <p>
 <object width="560" height="340"><param name="movie" value="http://www.youtube.com/v/ykWyD3FQSX4&hl=en&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/ykWyD3FQSX4&hl=en&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object>
 </p>
 
 
-<h2>Downloads and installation</h2>
+<h2><a name="downloads">Downloads</a></h2>
 
 <p>NavTable is <a href="http://www.gvsig.org/web/organization/news-office/news/navtable-will-be-a-gvsig-official-project/">an official extension of gvSIG</a>, which means that gvSIG versions from 1.10 and onwards are bundled with it by default. You have not to worry about it.</p>
 
@@ -68,6 +68,15 @@ In order to use NavTable, first we must select a layer into the gvSIG's TOC and 
     <th>Binaries</th>
     <th>Source code</th>
     <th>gvSIG version</th>
+</tr>
+<tr>
+    <td><a href="https://github.com/navtable/navtable/releases/tag/v1.0.3">1.0.3</a></td>
+    <td>2014-03-06</td>
+    <td><a
+    href="https://github.com/navtable/navtable/releases/download/v1.0.3/navtable-v1.0.3-for-gvSIG-1.12.0.gvspkg">gvspk</a></td>
+    <td><a href="https://github.com/navtable/navtable/releases/download/v1.0.3/navtable-v1.0.3-for-gvSIG-1.12.0.gvspkg">Manual installation</a></td>
+    <td><a href="https://github.com/navtable/navtable/archive/v1.0.3.zip">ZIP</a> - <a href="https://github.com/navtable/navtable/archive/v1.0.3.tar.gz">TAR.GZ</a></td>
+    <td>gvSIG 1.12</td>
 </tr>
 <tr>
     <td><a href="https://github.com/navtable/navtable/blob/master/NEWS">1.0</a></td>
@@ -140,24 +149,24 @@ In order to use NavTable, first we must select a layer into the gvSIG's TOC and 
 </table>
 </p>
 
-<p>Once gvSIG is installed in your computer, NavTable can be installed by means of the next ways:</p>
+<h2><a name="installation">Installation</a></h2>
+<p>NavTable is an official gvSIG plugin, so if gvSIG is installed in your computer, NavTable should be also there. This instructions are provided mostly for update purposes. From the latest versions NavTable can be installed manually or with the gvSIG plugin manager</p>
 
+<h4>gvSIG plugin manager</h4>
 <ul>
-<li><b>Automatic installation</b>:</li>
-
-<p>Download the correspondent <a>installer</a> from above, execute it and follow the instructions.</p>
-
-<li> <b>Manual installation: </b></li>
-
-<p>If you want to install NavTable manually you can download the binary files for the required version and unzip the folder <code>es.udc.cartolab.gvsig.navtable</code> into <code>[gvSIG_installation_path]/bin/gvSIG/extensiones/</code></p>
-
-<ul>
-<li>Linux: <code>/home/user/gvSIG_1.9/bin/gvSIG/extensiones/es.udc.cartolab.gvsig.navtable</code></li>
-<li>Mac:
-<code>/Applications/gvSIG/sextante/gvSIG1.9build1045sex20090521.app/Contents/Resources/gvSIG/gvSIG\ 1.9\ build\ 1045.app/Contents/Resources/Java/gvSIG/extensiones/es.udc.cartolab.gvsig.navtable</code></li>
-<li>Windows: <code>C:\Program Files\gvSIG_1_9\bin\gvSIG\extensiones\es.udc.cartolab.gvsig.navtable</code></li>
+<li>Open gvSIG, and go to Tools -> Plugin Manager</li>
+<li>Select install from url, and paste in the box the url of the gvspkg that you find above</li>
+<li>Press Next</li>
+<li>Search in the list <em>NavTable</em> and <strong>check</strong> the box</li>
+<li>Press Next, and in then Finish</li>
+<li>Close gvSIG, and open it again. NavTable should be updated</li>
 </ul>
-</ul>
+
+<h4>Manual installation</h4>
+
+<p>If you want to install NavTable manually you can download the binary files for the required version and unzip the folder <code>es.udc.cartolab.gvsig.navtable</code> into <code>[gvSIG_installation_path]/bin/gvSIG/extensiones/</code>. Even if the file has <em>.gvspkg</em> as extension, this is a zip file that can be decompressed.</p>
+
+<p>Remove the old folder before paste the new version</p>
 
 <h2><a class="anchor" name="participar"> How to participate</a></h2>
 
@@ -179,8 +188,8 @@ users mailinglists</a>.</li>
 <h2><a class="anchor" name="créditos">
 Credits</a></h2>
 
-Copyright (c) <b> CartoLab </b> - Universidade da Coruña, 2009, 2010, 2011, 2012.
-<a href="http://www.cartolab.es/"> http://www.cartolab.es/ </a>
+Copyright (c) <b>CartoLab</b>, 2009-2014.
+Copyright (c) <b>iCarto</b>, 2011-2014.
 
 <p> License GNU GPL v3. You can find the terms of this license in <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a> </p>
 
@@ -236,11 +245,8 @@ Copyright (c) <b> CartoLab </b> - Universidade da Coruña, 2009, 2010, 2011, 201
 </ul>
 
 
-<p>All development and related works with NavTable have been made using exclusively <b> FLOSS</b> (Free Libre Open Source Software).</p>
-
-
- <hr />
-<a href="http://www.cartolab.es"><img src="cartolab.png" alt="CartoLab" width="110" align="middle" border="0"></a> Last Review: July 2012.
+<hr />
+<a href="http://www.cartolab.es"><img src="cartolab.png" alt="CartoLab" width="110" align="middle" border="0"></a> Last Review: March, 2014.
 
 </div>
 
